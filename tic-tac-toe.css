@@ -1,0 +1,217 @@
+body {
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    width: 856px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.game-title {
+    margin-top: 88px;
+    height: 100px;
+}
+
+.game-title span {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    animation: bounce .5s ease infinite alternate;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    color: rgb(115, 211, 187);
+    text-shadow: 0 1px 0, 0 2px 0, 0 3px 0, 0 4px 0, 0 5px 0, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px;
+}
+
+.game-title span:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.game-title span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.game-title span:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.game-title span:nth-child(4) {
+    animation-delay: .4s;
+}
+
+.game-title span:nth-child(5) {
+    animation-delay: .5s;
+}
+
+.game-title span:nth-child(6) {
+    animation-delay: .6s;
+}
+
+.game-title span:nth-child(7) {
+    animation-delay: .7s;
+}
+
+.game-title span:nth-child(8) {
+    animation-delay: .8s;
+}
+
+.game-title span:nth-child(9) {
+    animation-delay: .9s;
+}
+
+@keyframes bounce {
+    100% {
+        top: -5px;
+        text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 50px 25px;
+    }
+}
+
+.border {
+    display: inline;
+    width: 186px;
+    padding: 20px 0;
+    border: 2px solid skyblue;
+    border-radius: 12%;
+}
+
+.player1 {
+    width: 87px;
+    text-align: left;
+    padding-left: 26px;
+    padding-right: 24px;
+    margin-right: 30px;
+}
+
+.player2 {
+    width: 89px;
+    text-align: right;
+    padding-right: 35px;
+    padding-left: 28px;
+}
+
+.player1 img {
+    width: 33px;
+    height: 32px;
+    margin: -10px auto;
+}
+
+.player2 img {
+    width: 42px;
+    height: 45px;
+    margin: -17px auto;
+}
+
+.player1,
+.player2 {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 12%;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.message {
+    margin-top: 44px;
+    color: lightslategrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.game-container {
+    width: 891px;
+    height: 832px;
+    margin: 0 auto;
+    background-image: url('supermario1.jpeg');
+    background-position: bottom;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 392px;
+    height: 395px;
+    margin: 38px 232px;
+    padding-top: 152px;
+}
+
+.square {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-top {
+    border-top: none;
+}
+
+.row-bottom {
+    border-bottom: none;
+}
+
+.row-left {
+    border-left: none;
+}
+
+.row-right {
+    border-right: none;
+}
+
+.restart {
+    width: 153px;
+    height: fit-content;
+    margin: 2px auto;
+    border: 0;
+    background-color: white;
+    font-size: 21px;
+    color: skyblue;
+    text-align: center;
+}
+
+.X-class {
+    font-size: 45px;
+    color: pink;
+    font-weight: 700;
+}
+
+.O-class {
+    font-size: 45px;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+.rotate-scale-up {
+    animation: rotate-scale-up 0.65s linear both;
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+    50% {
+        transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+    50% {
+        transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+        transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}

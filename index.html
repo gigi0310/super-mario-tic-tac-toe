@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='infor'>
+            <h1 class="game-title">
+                <span>T</span>
+                <span>i</span>
+                <span>c</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>T</span>
+                <span>a</span>
+                <span>c</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>T</span>
+                <span>o</span>
+                <span>e</span>
+            </h1>
+            <p class='border'>
+                <span class="player1"><img src="star.png" alt="">:&nbsp;&nbsp;<span class="player1_score">0</span></span>
+                <span class='player2'><img src="flower.jpeg" alt="">:&nbsp;&nbsp;<span class="player2_score">0</span></span>
+            </p>
+            <p class="message">Start Game!</p>
+        </div>
+        <div class="game-container">
+            <div class="game-grid">
+                <div class="square row-top row-left index0"></div>
+                <div class="square row-top index1"></div>
+                <div class="square row-top row-right index2"></div>
+                <div class="square row-left index3"></div>
+                <div class="square index4"></div>
+                <div class="square row-right index5"></div>
+                <div class="square row-bottom row-left index6"></div>
+                <div class="square row-bottom index7"></div>
+                <div class="square row-bottom row-right index8"></div>
+            </div>
+        </div>
+    </div>
+    <p class="restart">Restart Game</p>
+
+
+
+
+    <script src="tic-tac-toe.js"></script>
+</body>
+
+</html>
