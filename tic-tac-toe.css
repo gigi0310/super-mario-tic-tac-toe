@@ -170,18 +170,6 @@ body {
     text-align: center;
 }
 
-.X-class {
-    font-size: 45px;
-    color: pink;
-    font-weight: 700;
-}
-
-.O-class {
-    font-size: 45px;
-    color: cornflowerblue;
-    font-weight: 700;
-}
-
 .rotate-scale-up {
     animation: rotate-scale-up 0.65s linear both;
 }
