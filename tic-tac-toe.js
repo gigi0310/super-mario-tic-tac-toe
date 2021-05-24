@@ -54,10 +54,14 @@ function changeSquareContent(event) {
         var xImage = new Image(80, 80);
         xImage.src = xImageSrc;
         squareClicked.appendChild(xImage);
+        var audio = new Audio('coin.mp3')
+        audio.play();
     } else {
         var oImage = new Image(100, 100);
         oImage.src = oImageSrc;
         squareClicked.appendChild(oImage);
+        var audio = new Audio('jump.mp3')
+        audio.play()
     }
 
     turn++ // after player put the mark on the game board, counts the turns
@@ -87,6 +91,8 @@ function changeSquareContent(event) {
     }
     if (turn > 9) {
         gameMessage.textContent = 'Draw'
+        var audio = new Audio('draw.mp3')
+        audio.play();
     }
 }
 
@@ -120,7 +126,8 @@ function check(squareClicked, winCondition) {
 
     for (var i = 0; i < winCondition.length; i++) {
         winCondition[i].style.backgroundColor = 'mistyrose';
-
+        var audio = new Audio('winner.mp3')
+        audio.play();
     }
     return true;
 }
@@ -143,3 +150,7 @@ function restartGame() {
 
 }
 restart.addEventListener('click', restartGame);
+
+
+var audio = new Audio('coin.mp3')
+audio.play();
