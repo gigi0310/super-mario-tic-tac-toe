@@ -72,7 +72,8 @@ function changeSquareContent(event) {
         if (check(squareClicked, winCondition[i])) { //if check function below return true, continue;
             if (squareClicked.children[0].src == xImageSrc) {
                 xScore++; //count X' score;
-                score1.textContent = xScore; // change the score result for X
+                score1.textContent = xScore // change the score result for X
+
             } else {
                 oScore++; //count O' score;
                 score2.textContent = oScore; // change the score result for O
@@ -150,7 +151,3 @@ function restartGame() {
 
 }
 restart.addEventListener('click', restartGame);
-
-
-var audio = new Audio('coin.mp3')
-audio.play();
